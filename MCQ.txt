@@ -1,0 +1,33 @@
+public class mcq {
+    public static void displayQuestion() {
+        System.debug('Who is the creator of Python?');
+        System.debug('1. Guido van Rossum');
+        System.debug('2. Benrich');
+        System.debug('3. Matusos');
+        System.debug('4. Tim');
+    }
+
+    public static void checkInput(String userInput) {
+        // Define the correct input
+        String correctInput = '1';
+        // Check if the user input matches the correct input
+        if (userInput == correctInput) {
+            System.debug('true'); // Input is correct
+        } else {
+            System.debug('false'); // Input is incorrect
+        }
+    }
+}
+
+
+
+
+// First, display the question with possible answers
+mcq.displayQuestion();
+
+// Assume a user input and check if it's correct
+String userInput = '1'; // assuming the user selects option '1'
+mcq.checkInput(userInput);
+
+// Optionally, check with an incorrect answer
+mcq.checkInput('3'); // incorrect option

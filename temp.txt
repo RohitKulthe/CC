@@ -1,0 +1,53 @@
+public class tempc {
+    public static void ctf(Decimal t) {
+        system.debug((t * 9 / 5) + 32);
+    }
+    public static void ftc(Decimal t) {
+        system.debug((t- 32) * 5 / 9);
+    }
+    public static void ctk(Decimal t) {
+        system.debug(t+ 273.15);
+    }
+    public static void ktc(Decimal t) {
+        system.debug(t - 273.15);
+    }
+    public static void ftk(Decimal t) {
+        system.debug((t +459.67) * 5 / 9);
+    }
+     public static void ktf(Decimal t) {
+        system.debug((t* 9 / 5) - 459.67);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// Example of using the tempc class to convert temperatures
+Decimal temperatureCelsius = 25;   // 25°C
+Decimal temperatureFahrenheit = 77; // 77°F
+Decimal temperatureKelvin = 300;   // 300 K
+
+// Convert Celsius to Fahrenheit
+tempc.ctf(temperatureCelsius);
+
+// Convert Fahrenheit to Celsius
+tempc.ftc(temperatureFahrenheit);
+
+// Convert Celsius to Kelvin
+tempc.ctk(temperatureCelsius);
+
+// Convert Kelvin to Celsius
+tempc.ktc(temperatureKelvin);
+
+// Convert Fahrenheit to Kelvin
+tempc.ftk(temperatureFahrenheit);
+
+// Convert Kelvin to Fahrenheit
+tempc.ktf(temperatureKelvin);

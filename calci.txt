@@ -1,0 +1,46 @@
+public class cal {
+    public static void add(Integer num1, Integer num2) {
+       Integer a= num1 + num2;
+        system.debug(a);
+        
+    }
+
+    public static void subtract(Integer num1, Integer num2) {
+        Integer b= num1 - num2;
+        system.debug(b);
+    }
+
+    public static void multiply(Integer num1, Integer num2) {
+       Integer c= num1 * num2;
+        system.debug(c);
+    }
+
+    public static void divide(Integer num1, Integer num2) {
+        Decimal d;
+        if (num2 == 0) {
+            System.debug('Error: Cannot divide by zero.');
+           
+        } else {
+            d=num1 / num2;
+            
+        }
+        system.debug(d);
+    }
+}
+
+
+
+
+
+
+
+
+cal.add(10, 5); // Calls the add method and passes 10 and 5 as arguments
+cal.subtract(10, 5); // Calls the subtract method and passes 10 and 5 as arguments
+cal.multiply(10, 5); // Calls the multiply method and passes 10 and 5 as arguments
+cal.divide(10, 5); // Calls the divide method and passes 10 and 5 as arguments
+cal.divide(10, 0); // This will test the division by zero error handling
+
+
+
+

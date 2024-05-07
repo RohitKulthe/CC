@@ -1,0 +1,23 @@
+public class percentage {
+    public static void calculatePercentage(Decimal num, Decimal total) {
+        // Check if the total is not zero to avoid division by zero error
+        if (total == 0) {
+            system.debug('error');
+        }
+        // Calculate the percentage
+        Decimal pp = (num / total) * 100;
+        system.debug(pp);
+    }
+}
+
+
+
+
+
+
+// Sample data to calculate percentage
+Decimal num = 50;
+Decimal total = 200;
+
+// Call the calculatePercentage method from the percentage class
+percentage.calculatePercentage(num, total);
